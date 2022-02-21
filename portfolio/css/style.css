@@ -1,0 +1,315 @@
+body{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+img{
+    display: inline-block;
+}
+a{
+    transition: 0.2s ease-out;
+}
+p{
+    margin: 0 auto;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-4{
+    width: 360px;
+    margin-right: 20px;
+    float: right;
+}
+#element::-webkit-scrollbar {
+    width: 10px;
+    background-color: #061634;
+}
+#element::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #061634;
+}
+#element::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+header{
+    background: #343c4e;
+    background-image: url(../img/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    min-height: 400px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.header__animation{
+    animation: text 3s 1;
+}
+@keyframes text{
+    0%{
+        color: #000;
+        left:0;
+    }
+    30%{
+       left: 50px;
+    }
+}
+.header__title{
+    font-size: 56px;
+    margin-bottom: 30px;
+    font-family: 'Merriweather', serif;
+    margin-top: -50px;
+}
+.header__slogan{
+    font-size: 28px;
+    line-height: 42px;
+}
+.header__arrow{
+    font-size: 48px;
+    width:  60px;
+    height: 50px;
+    margin-left: -30px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+}
+.header__arrow_link{
+    color: white;
+}
+.portfolio{
+    padding-top: 70px;
+    margin-bottom: 10px;
+}
+.portfolio-item{
+    margin-bottom: 70px;
+}
+.title{
+    font-size: 46px;
+    margin-bottom: 60px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+.portfolio__item__img{
+    margin-bottom: 17px;
+    transition: 1.5s;
+}
+.portfolio__item__img img{
+    max-width: 100%;
+    height: auto;
+}
+.portfolio__item__img:hover{
+    transform: scale(1.05);
+}
+.portfolio__item__title{
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+.portfolio__item__title a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #FFF;
+}
+.portfolio__item__title a:hover{
+    color: #0052C2;
+    border-color: rgba(0, 82, 194, 0.3);
+}
+.portfolio-single-page{
+    text-align: center;
+
+}
+.portfolio-single-page img{
+    height: auto;
+   
+}
+.button-back{
+    font-weight: 700;
+    text-decoration: none;
+    color: #0052C2;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    padding: 8px 23px 8px 23px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: #0052C2;
+    border-style: solid;
+    border-radius: 50px;
+    transition: 0.7s ease-out;
+}
+.button-back:hover{
+    color: white;
+    background-color: #0052C2;
+}
+footer {
+    background-color: #061634;                          
+    height: 360px;
+    width: 100%;
+    padding-top: 90px;
+    color: #6479a2;
+    clear: both;
+ }
+ .footer p{
+     margin-top: 0;
+     margin-bottom: 15px;
+ }
+ p.footer__name{
+    font-size: 28px;
+    margin-bottom: 10px;
+    line-height: normal ;
+    font-family: 'Merriweather', serif;
+ }
+ .footer__social{
+     color: white;
+ }
+ .footer__social__icons{
+     color: white;
+     font-size: 32px;
+ }
+ .footer__social__icons a{
+     color: white;
+     text-decoration: none;
+     margin-right: 30px;
+ }
+.footer__social__icons a:last-child{
+    margin-right: 0;
+}
+.footer__social__icons i{
+    transition: 0.6s;
+}
+.footer__social__icons i:hover{
+    color: #FFE400;
+    transform: scale(1.5);
+}
+.button{
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    padding: 8px 23px 8px 23px;
+    margin-bottom: 13px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 50px;
+    transition: 0.7s ease-out;
+}
+.button:hover{
+    color: #061634;
+    background-color: white;
+    transform: scale(1.05);
+}
+.homepage{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(-90deg);
+    z-index: 10;
+}
+.pageup{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    display: none;
+}
+@media screen and (max-width: 1160px){
+    .button{
+        margin-bottom: 25px;
+    }
+    .container{
+        width: 100%;
+    }
+    .col-4{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+    ._mb0{
+        margin-bottom: 0;
+    }
+    header{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header__title{
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 15px;
+    }
+    .header__slogan{
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .portfolio{
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .portfolio__item{
+        margin-bottom: 20px;
+    }
+    .portfolio-single-page{
+        margin-top: 50px;
+    }
+    .portfolio-single-page img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .title{
+        font-size: 36px;
+    }
+    footer{
+        margin-top: 0;
+        height: 430px;
+        padding-top: 55px;
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 577px){
+    .header__title{
+        font-size: 32px;
+    }
+    .header__slogan{
+        font-size: 19px;
+        line-height: 33px;
+    }
+    .header__arrow{
+        bottom: 70px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .portfolio__item__title{
+        font-size: 19px;
+    }
+    body{
+        font-size: 13px;
+    }
+    .footer__social__icons{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+}

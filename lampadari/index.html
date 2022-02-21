@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Mmlampadari</title>
+</head>
+<body>
+    <header class="header" id="mmlampadari">
+        <div class="header__logo">
+            <a href="#mmlampadari" class="header__logo-link"><img src="img/logo.png" alt="logo" class="header__logo-img" width="283" height="83"></a>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">home</a>
+                </li>
+                <li class="header__menu-item" id="azienda">
+                    <a href="#" class="header__menu-link" >azienda</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">collezioni</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">NEWS</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">contatti</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__dropdown">
+            <ul class="header__dropdown-items">
+                <li class="header__dropdown-item"><a href="#" class="header__dropdown-link">storia</a></li>
+                <hr id="hr__first">
+                <li class="header__dropdown-item" id="dropdown__item-design"><a href="#" class="header__dropdown-link" id="design">mm design</a></li>
+                <hr id="hr__second">
+                <li class="header__dropdown-item" id="dropdown__item-designer"><a href="#" class="header__dropdown-link">designer</a></li>
+                <hr id="hr__third">
+                <li class="header__dropdown-item" id="dropdown__item-certificazioni"><a href="#" class="header__dropdown-link">certificazioni</a></li>
+            </ul>
+        </div>
+        <div class="header__reservation">
+            AREA RISERVATA <img src="icons/castle.png" alt="castle" class="header__reservation-icons" width="9" height="13">
+        </div>  
+        <div class="header__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div class="header__overlay"></div>
+    </header>
+    <div class="modal">
+        <div class="modal__wrapper">
+            <h3 class="modal__wrapper-title">AREA RISERVATA</h3>
+            <form action="#" class="modal__wrapper-accedi">
+                <h4 class="modal__wrapper-subtitle">ACCEDI</h4>
+                <input type="email" placeholder="E-mail" class="modal__wrapper-input accedi-input">
+                <input type="password" placeholder='Password' class="modal__wrapper-input">
+                <button class="modal__wrapper-btn accedi__btn btn" type="submit">ACCEDI</button>
+                <span class="modal__wrapper-span">Password dimenticata</span>
+            </form>
+             <form action="#" class="modal__wrapper-registrati">
+                <h4 class="modal__wrapper-subtitle">REGISTRATI</h4>
+                <input type="name" placeholder='Nome' class="modal__wrapper-input registrati__input">
+                <input type="name" placeholder='Cognome' class="modal__wrapper-input registrati__input">
+                <input type="email" placeholder='E-mail' class="modal__wrapper-input registrati__input">
+                <input type="password" placeholder='Password' class="modal__wrapper-input registrati__input">
+                <div class="modal__wrapper-checkbox">
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <label for="checkbox"></label>
+                    <span class="modal__wrapper-checkbox-span">Acconsento al trattamento dei dati</span>
+                </div>
+                <div class="modal__wrapper-checkbox">
+                    <input type="checkbox" id="checkbox-second" name="checkbox">
+                    <label for="checkbox-second"></label>
+                    <span class="modal__wrapper-checkbox-span _pt2">Mi iscrivo alla Newsletter</span>
+                </div>
+                <button class="modal__wrapper-btn registrati__btn btn">ISCRIVITI</button>
+            </form> 
+            <h4 class="accedi-title">
+                ACCEDI
+            </h4>
+            <h4 class="registrati-title">
+                REGISTRATI
+            </h4>
+            <div class="modal__wrapper-close">
+                <img src="icons/close.png" alt="closeBtn" width="23" height="22">
+            </div>
+        </div>
+        <div class="modal__overlay"></div>
+    </div>
+    <section class="lampadari">
+        <div class="lampadari__slider swiper-container">
+            <div class="lampadari__slides swiper-wrapper">
+                <div class="lampadari__slide slide_1 swiper-slide">
+                    <img src="img/lampadari.png" alt="slide_1">
+                     <div class="lampadari__slide-block">
+                            <h1 class="lampadari__slide-title">Lampadari contemporanei</h1>
+                            <p class="lampadari__slide-descr">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod tempor dolore 
+                            </p>
+                    </div>
+                </div>
+                <div class="lampadari__slide swiper-slide">
+                    <img src="img/lampadari.png" alt="slide_2">
+                     <div class="lampadari__slide-block">
+                            <h2 class="lampadari__slide-title">Lampadari contemporanei</h2>
+                            <p class="lampadari__slide-descr">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod tempor dolore 
+                            </p>
+                    </div>
+                </div>
+                <div class="lampadari__slide swiper-slide">
+                    <img src="img/lampadari.png" alt="slide_3">
+                     <div class="lampadari__slide-block">
+                            <h2 class="lampadari__slide-title">Lampadari contemporanei</h2>
+                            <p class="lampadari__slide-descr">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod tempor dolore 
+                            </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="lampadari__arrow">
+                <img src="icons/arrow_open.png" alt="arrow_open" class="lampadari__arrow-img" width="39" height="16">
+            </div>
+            <div class="lampadari__items">
+                <div class="lampadari__item lampadari__item-first">
+                    <h2 class="lampadari__item-title">Stai pensando ad un progetto? </h2>
+                    <p class="lampadari__item-descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore 
+                    </p>
+                    <span class="lampadari__item-span">Approfondisci</span>
+                </div>
+                <div class="lampadari__item lampadari__item-second">
+                    <h2 class="lampadari__item-title"> Vi aspettiamo alla fiera Euroluce </h2>
+                    <p class="lampadari__item-descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore 
+                    </p>
+                    <span class="lampadari__item-span">Approfondisci</span>
+                </div>
+                <div class="lampadari__item lampadari__item-third">
+                    <h2 class="lampadari__item-title"> Scopri la nuova collezione </h2>
+                    <p class="lampadari__item-descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore 
+                    </p>
+                    <span class="lampadari__item-span">Approfondisci</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__items">
+            <div class="footer__item">
+                <h3 class="footer__item-title">Lampadari made in italy</h3>
+                <p class="footer__item-descr">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea  
+                </p>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__item-title" id="item__second">lampadari artigianali</h3>
+                <p class="footer__item-descr">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea 
+                </p>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__item-title" id="item__third"><span class="footer__item-title-span">45</span> anni di esperienza</h3>
+                <p class="footer__item-descr">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea 
+                </p>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__item-title">NEWSLETTER</h3>
+                <form action="#" class="footer__item-form">
+                    <input type="name" placeholder="Nome e Cognome" class="footer__item-input">
+                    <input type="email" placeholder="Email" class="footer__item-input">
+                    <div class="footer__item-checkbox">
+                        <input type="checkbox" id="footer__checkbox" name="checkbox">
+                        <label for="footer__checkbox"></label>
+                        <span class="footer__item-span">Acconsento al trattamento dei dati</span>
+                    </div>
+                    <button class="footer__item-btn btn">ISCRIVITI</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__links">
+            <ul class="footer__links-items">
+                <li class="footer__links-item">
+                    MMLAMPADARI srl
+                </li>
+                <li class="footer__links-item">
+                    Via Feltrina 00
+                </li>
+                <li class="footer__links-item">
+                    31111 Pederobba (TV)
+                </li>
+                <li class="footer__links-item">
+                    0423.123456
+                </li>
+                <li class="footer__links-item">
+                    <a href="mailto:info@mmlampadari.mm" class="footer__links-email">
+                        info@mmlampadari.mm
+                    </a>
+                </li>
+                <li class="footer__links-item">
+                    P.IVA 04123456789
+                </li>
+            </ul>
+            <ul class="footer__links-social">
+                <li class="footer__links-facebook">
+                    <a href="#" title="facebook">
+                        <img src="icons/facebook.png" alt="facebook" width="18" height="18">
+                    </a>
+                </li>
+                <li class="footer__links-instagram">
+                    <a href="#" title="instagram">
+                        <img src="icons/instagram.png" alt="instagram" width="19" height="18">
+                    </a>
+                </li>
+                <li class="footer__links-pinterest">
+                    <a href="#" title="pinterest">
+                        <img src="icons/pinterest.png" alt="pinterest" width="13" height="18">
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer__links-lang">
+                <li class="footer__links-ita">
+                    <a href="#">ita</a> 
+                </li>
+                <li class="footer__links-eng">
+                    <a href="#">eng</a> 
+                </li>
+                <li class="footer__links-deu">
+                    <a href="#">deu</a> 
+                </li>
+                <li class="footer__links-pyc">
+                    <a href="#">pyc</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <a href="../index.html#portfolio" class="homepage">
+        <svg  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-circle-up" 
+        class="svg-inline--fa fa-chevron-circle-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 512 512"><path fill="#ffa501" 
+        d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm231-113.9L103.5 277.6c-9.4 9.4-9.4 
+        24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L256 226.9l101.6 101.6c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6
+        0-33.9L273 142.1c-9.4-9.4-24.6-9.4-34 0z"></path></svg>
+    </a>
+    <a href="#" class="pageup">
+        <svg  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-circle-up" 
+        class="svg-inline--fa fa-chevron-circle-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 512 512"><path fill="#e2d1a6" 
+        d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm231-113.9L103.5 277.6c-9.4 9.4-9.4 
+        24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L256 226.9l101.6 101.6c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6
+        0-33.9L273 142.1c-9.4-9.4-24.6-9.4-34 0z"></path></svg>
+    </a>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src='js/script.js'></script>
+</body>
+</html>
