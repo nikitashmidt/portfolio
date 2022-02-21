@@ -55,17 +55,22 @@ for (var i = 0; i < headerItem.length; i++) {
   headerItem[i].addEventListener('click', function () {
     dropDown.classList.remove('header__dropdown-active');
   });
- }
-lampadariArrow.addEventListener('click', function () {
+}
+function lampadariArrowToggl() {
   lampadariArrow.classList.toggle('lampadari__arrow-active');
   lampadariItems.classList.toggle('lampadari__items-active');
   lampadariArrowImg.classList.toggle('lampadari__arrow-img-active');
-});
+  console.log('helo');
+ }
+lampadariArrow.addEventListener('click', lampadariArrowToggl);
 function toggles() {
   headerMenu.classList.toggle('header__menu-active');
   headerOverlay.classList.toggle('header__overlay-active');
   hamburger.classList.toggle('header__hamburger-active');
   document.body.classList.toggle('overflow');
+  if (lampadariItems.classList.contains('lampadari__items-active') &&  lampadariArrow.classList.contains('lampadari__arrow-active')) {
+    lampadariArrowToggl()
+  } 
 }
 hamburger.addEventListener('click', toggles);
 headerOverlay.addEventListener('click', toggles);
@@ -117,8 +122,6 @@ $(document).ready(function(){
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
-   
-
 });
 
 
