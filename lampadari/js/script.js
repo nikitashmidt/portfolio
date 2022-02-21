@@ -60,7 +60,6 @@ function lampadariArrowToggl() {
   lampadariArrow.classList.toggle('lampadari__arrow-active');
   lampadariItems.classList.toggle('lampadari__items-active');
   lampadariArrowImg.classList.toggle('lampadari__arrow-img-active');
-  console.log('helo');
  }
 lampadariArrow.addEventListener('click', lampadariArrowToggl);
 function toggles() {
