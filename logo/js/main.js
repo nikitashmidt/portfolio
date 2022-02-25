@@ -90,8 +90,7 @@ if (window.screen.width <= 1024) {
   });
 }
 
-var screenWidth = window.screen.width;
-console.log(screenWidth);
+
 
 /***/ })
 
