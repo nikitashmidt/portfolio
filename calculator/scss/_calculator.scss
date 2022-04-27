@@ -1,0 +1,86 @@
+.calculator{
+    padding-bottom: 50px;
+    text-align: center;;
+    border: 1px solid white;
+    @include box-shadow;
+    margin-bottom: 150px;
+    &__title{
+        margin: 40px;
+    }
+    &__container{
+        @include flex-center;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+    }
+    &__inputs{
+        width: 50%;
+        display: flex;
+        position: relative;
+    }
+    &__input{
+        width: 100%;
+        transition: 0.3s all;
+        border: none;
+        outline: none;
+        padding: 15px;
+        font-size: 20px;
+        color: $main-color;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        &::placeholder{
+            color: $main-color;
+        }
+        &:focus{
+            @include box-shadow;
+        }
+        &:hover{
+            @include box-shadow;
+        }
+    }
+    &__span{
+        height: 51px;
+        width: 60px;
+        border: 1px solid white;
+        position: absolute;
+        right: 0;
+        svg {
+            transition: 0.3s all;
+            fill: $main-color;
+            background-color: rgb(26, 25, 25);
+            height: 100%;
+            width: 100%;
+            &:hover{
+                @include box-shadow;
+            }
+        }
+    }
+    &__result{
+        font-size: 35px;
+    }
+    &__buttons{
+        @include flex-center;
+        position: relative;
+    }
+    &__btn{
+        width: 300px;
+    }
+    &__reboot{
+        width: 60px;
+        height: 49px;
+        position: absolute;
+        right: 0px;
+        border: 1px solid white;
+        svg {
+            transition: 0.3s all;
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            background-color: #1a1919;
+            fill: $main-color;
+            &:hover{
+                @include box-shadow;
+            }
+        }
+    }
+}
