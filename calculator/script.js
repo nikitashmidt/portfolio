@@ -41,7 +41,8 @@ btnRand.addEventListener('click', () => {
 // interest calculator
 const calcBtn = document.querySelector('.calculator__btn'),
     calcRes = document.querySelector('.calculator__result'),
-    calcNumber = document.querySelector('#calculator__number');
+    calcNumber = document.querySelector('#calculator__number'),
+    calcPerc = document.querySelector('#calculator__percentages');
 
 function plus() {
     let percentages, number, result;
@@ -50,15 +51,16 @@ function plus() {
     number = document.querySelector('#calculator__number').value;
     number = parseInt(number);
     result = Math.floor(number / 100 * percentages);
-    // if (result.length >=) { }
     if (result) { 
         return  result
     } else {
-         return 'Некорректные данные'
+         return 'Введите данные'
     }
 }
 calcBtn.addEventListener('click', () => {
     calcRes.innerHTML = plus()
+    calcNumber.value = ''
+    calcPerc.value = ''
 })
 
 
