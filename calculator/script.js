@@ -59,8 +59,10 @@ function plus() {
 }
 calcBtn.addEventListener('click', () => {
     calcRes.innerHTML = plus()
-    calcNumber.value = ''
-    calcPerc.value = ''
+    if (calcNumber.value && calcNumber.value) { 
+        calcNumber.value = ''
+        calcPerc.value = ''
+    } 
 })
 
 
