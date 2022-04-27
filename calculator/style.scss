@@ -1,0 +1,140 @@
+body{
+    color: white;
+}
+button{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 25px ;
+    border: 1px solid rgb(94, 4, 238);
+    transition: 0.3s all;
+    color: rgb(94, 4, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+        width: 32px;
+        height: 32px;
+        animation-name: animal;
+        animation-duration: 1s;
+    }
+    &:hover{
+     box-shadow: 1px 1px 10px 10px rgb(94, 4, 238);
+    }
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    position: relative;
+    &__content{
+        font-size: 50px;
+        position: absolute;
+        bottom: -90px;
+    }
+}
+.calculator{
+    padding-bottom: 50px;
+    text-align: center;;
+    border: 1px solid white;
+    box-shadow: 1px 1px 10px 10px rgb(94, 4, 238);
+    margin-bottom: 150px;
+    &__title{
+        margin: 40px;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        position: relative;
+    }
+    &__inputs{
+        width: 50%;
+        display: flex;
+        position: relative;
+    }
+    &__input{
+        width: 100%;
+        transition: 0.3s all;
+        border: none;
+        outline: none;
+        padding: 15px;
+        font-size: 20px;
+        color: rgb(94, 4, 238);
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        &::placeholder{
+            color: rgb(94, 4, 238);
+        }
+        &:focus{
+            box-shadow:1px 1px 10px 10px rgb(94, 4, 238);
+        }
+        &:hover{
+            box-shadow:1px 1px 10px 10px rgb(94, 4, 238);
+        }
+    }
+    &__span{
+        height: 51px;
+        width: 60px;
+        border: 1px solid white;
+        position: absolute;
+        right: 0;
+        svg {
+            fill: rgb(94, 4, 238);
+            background-color: rgb(26, 25, 25);
+            height: 100%;
+            width: 100%;
+            transition: 0.3s all;
+            &:hover{
+                box-shadow:1px 1px 10px 10px rgb(94, 4, 238);
+            }
+        }
+    }
+    &__result{
+        font-size: 35px;
+    }
+}
+
+
+@keyframes animal {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .header{
+        gap: 10px;
+    }
+
+}
+@media (max-width: 768px) {
+    .calculator__inputs{
+        width: 80%;
+    }
+}
+@media (max-width: 576px) {
+    .header{
+        flex-direction: column;
+    }
+    .calculator__title{
+        margin: 15px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 420px) {
+    .calculator__inputs{
+        width: 95%;
+    }
+}
