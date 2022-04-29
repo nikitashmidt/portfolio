@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+@import "animation";
+@import "header";
+@import "calculator";
+@import "media";
+body{
+    color: white;
+}
+button{
+    width: 200px;
+    height: 53px;
+    cursor: pointer;
+    font-size: 25px ;
+    border: 1px solid $main-color;
+    transition: 0.3s all;
+    color: $main-color;
+    @include flex-center;
+    svg {
+        width: 32px;
+        height: 32px;
+        animation-name: animal;
+        animation-duration: 1s;
+    }
+    &:hover{
+        @include box-shadow;
+    }
+}
+
+
