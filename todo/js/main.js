@@ -286,6 +286,6 @@ function emptyTrash(e) {
 function move() {
     if (window.screen.width <= 768) {
         console.log('true')
-        openModalBtn.innerHTML = `<img src="/img/add.svg" width="30px" height="30px">`;
+        openModalBtn.innerHTML = `<img src="../img/add.svg" width="20px" height="20px">`;
     }
 }
