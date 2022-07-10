@@ -285,7 +285,7 @@ function emptyTrash(e) {
 
 let timer = setInterval(() => {
     if (window.screen.width <= 769) {
-        openModalBtn.innerHTML = `<img src="../img/add.svg" width="20px" height="20px">`;
+        openModalBtn.innerHTML = `<img src="./img/add.svg" width="20px" height="20px">`;
         console.log('true');
         clearInterval(timer)
     } else {
